@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A3DE6BD622C5D8100050AD9B /* Scrabble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3DE6BCC22C5D8100050AD9B /* Scrabble.framework */; };
-		A3DE6BDB22C5D8100050AD9B /* ScrabbleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DE6BDA22C5D8100050AD9B /* ScrabbleTests.swift */; };
 		A3DE6BDD22C5D8100050AD9B /* Scrabble.h in Headers */ = {isa = PBXBuildFile; fileRef = A3DE6BCF22C5D8100050AD9B /* Scrabble.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A3DE6BEB22C5D8600050AD9B /* Character + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DE6BEA22C5D8600050AD9B /* Character + Extension.swift */; };
+		A3DE6BEE22C5D8900050AD9B /* Scrabble.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DE6BED22C5D8900050AD9B /* Scrabble.swift */; };
+		A3DE6BF622C5D8B40050AD9B /* ScrabbleScoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DE6BF522C5D8B40050AD9B /* ScrabbleScoreTests.swift */; };
+		A3DE6BF822C5D8B40050AD9B /* Scrabble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3DE6BCC22C5D8100050AD9B /* Scrabble.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		A3DE6BD722C5D8100050AD9B /* PBXContainerItemProxy */ = {
+		A3DE6BF922C5D8B40050AD9B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A3DE6BC322C5D8100050AD9B /* Project object */;
 			proxyType = 1;
@@ -26,9 +28,12 @@
 		A3DE6BCC22C5D8100050AD9B /* Scrabble.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Scrabble.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3DE6BCF22C5D8100050AD9B /* Scrabble.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Scrabble.h; sourceTree = "<group>"; };
 		A3DE6BD022C5D8100050AD9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A3DE6BD522C5D8100050AD9B /* ScrabbleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScrabbleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A3DE6BDA22C5D8100050AD9B /* ScrabbleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrabbleTests.swift; sourceTree = "<group>"; };
-		A3DE6BDC22C5D8100050AD9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3DE6BEA22C5D8600050AD9B /* Character + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Character + Extension.swift"; sourceTree = "<group>"; };
+		A3DE6BED22C5D8900050AD9B /* Scrabble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scrabble.swift; sourceTree = "<group>"; };
+		A3DE6BF322C5D8B40050AD9B /* ScrabbleScoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScrabbleScoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3DE6BF522C5D8B40050AD9B /* ScrabbleScoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrabbleScoreTests.swift; sourceTree = "<group>"; };
+		A3DE6BF722C5D8B40050AD9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3DE6C0A22C5D94B0050AD9B /* ScrabbleScoreTests copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "ScrabbleScoreTests copy-Info.plist"; path = "/Users/joserodriguezminguet/Documents/iOS/Scrabble/ScrabbleScoreTests copy-Info.plist"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,11 +44,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A3DE6BD222C5D8100050AD9B /* Frameworks */ = {
+		A3DE6BF022C5D8B40050AD9B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A3DE6BD622C5D8100050AD9B /* Scrabble.framework in Frameworks */,
+				A3DE6BF822C5D8B40050AD9B /* Scrabble.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,8 +59,9 @@
 			isa = PBXGroup;
 			children = (
 				A3DE6BCE22C5D8100050AD9B /* Scrabble */,
-				A3DE6BD922C5D8100050AD9B /* ScrabbleTests */,
+				A3DE6BF422C5D8B40050AD9B /* ScrabbleScoreTest */,
 				A3DE6BCD22C5D8100050AD9B /* Products */,
+				A3DE6C0A22C5D94B0050AD9B /* ScrabbleScoreTests copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,7 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				A3DE6BCC22C5D8100050AD9B /* Scrabble.framework */,
-				A3DE6BD522C5D8100050AD9B /* ScrabbleTests.xctest */,
+				A3DE6BF322C5D8B40050AD9B /* ScrabbleScoreTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -71,19 +77,61 @@
 		A3DE6BCE22C5D8100050AD9B /* Scrabble */ = {
 			isa = PBXGroup;
 			children = (
-				A3DE6BCF22C5D8100050AD9B /* Scrabble.h */,
-				A3DE6BD022C5D8100050AD9B /* Info.plist */,
+				A3DE6BE822C5D83D0050AD9B /* Core */,
+				A3DE6BE722C5D8320050AD9B /* Application */,
+				A3DE6BE622C5D81A0050AD9B /* FrameworkExport */,
 			);
 			path = Scrabble;
 			sourceTree = "<group>";
 		};
-		A3DE6BD922C5D8100050AD9B /* ScrabbleTests */ = {
+		A3DE6BE622C5D81A0050AD9B /* FrameworkExport */ = {
 			isa = PBXGroup;
 			children = (
-				A3DE6BDA22C5D8100050AD9B /* ScrabbleTests.swift */,
-				A3DE6BDC22C5D8100050AD9B /* Info.plist */,
+				A3DE6BCF22C5D8100050AD9B /* Scrabble.h */,
 			);
-			path = ScrabbleTests;
+			path = FrameworkExport;
+			sourceTree = "<group>";
+		};
+		A3DE6BE722C5D8320050AD9B /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				A3DE6BD022C5D8100050AD9B /* Info.plist */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		A3DE6BE822C5D83D0050AD9B /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				A3DE6BEC22C5D87E0050AD9B /* Module */,
+				A3DE6BE922C5D84C0050AD9B /* Utils */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		A3DE6BE922C5D84C0050AD9B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A3DE6BEA22C5D8600050AD9B /* Character + Extension.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		A3DE6BEC22C5D87E0050AD9B /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				A3DE6BED22C5D8900050AD9B /* Scrabble.swift */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		A3DE6BF422C5D8B40050AD9B /* ScrabbleScoreTest */ = {
+			isa = PBXGroup;
+			children = (
+				A3DE6BF522C5D8B40050AD9B /* ScrabbleScoreTests.swift */,
+				A3DE6BF722C5D8B40050AD9B /* Info.plist */,
+			);
+			path = ScrabbleScoreTest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,22 +166,22 @@
 			productReference = A3DE6BCC22C5D8100050AD9B /* Scrabble.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		A3DE6BD422C5D8100050AD9B /* ScrabbleTests */ = {
+		A3DE6BF222C5D8B40050AD9B /* ScrabbleScoreTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A3DE6BE322C5D8100050AD9B /* Build configuration list for PBXNativeTarget "ScrabbleTests" */;
+			buildConfigurationList = A3DE6BFB22C5D8B40050AD9B /* Build configuration list for PBXNativeTarget "ScrabbleScoreTests" */;
 			buildPhases = (
-				A3DE6BD122C5D8100050AD9B /* Sources */,
-				A3DE6BD222C5D8100050AD9B /* Frameworks */,
-				A3DE6BD322C5D8100050AD9B /* Resources */,
+				A3DE6BEF22C5D8B40050AD9B /* Sources */,
+				A3DE6BF022C5D8B40050AD9B /* Frameworks */,
+				A3DE6BF122C5D8B40050AD9B /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				A3DE6BD822C5D8100050AD9B /* PBXTargetDependency */,
+				A3DE6BFA22C5D8B40050AD9B /* PBXTargetDependency */,
 			);
-			name = ScrabbleTests;
-			productName = ScrabbleTests;
-			productReference = A3DE6BD522C5D8100050AD9B /* ScrabbleTests.xctest */;
+			name = ScrabbleScoreTests;
+			productName = ScrabbleScoreTest;
+			productReference = A3DE6BF322C5D8B40050AD9B /* ScrabbleScoreTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -148,8 +196,9 @@
 				TargetAttributes = {
 					A3DE6BCB22C5D8100050AD9B = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 					};
-					A3DE6BD422C5D8100050AD9B = {
+					A3DE6BF222C5D8B40050AD9B = {
 						CreatedOnToolsVersion = 10.2.1;
 					};
 				};
@@ -167,7 +216,7 @@
 			projectRoot = "";
 			targets = (
 				A3DE6BCB22C5D8100050AD9B /* Scrabble */,
-				A3DE6BD422C5D8100050AD9B /* ScrabbleTests */,
+				A3DE6BF222C5D8B40050AD9B /* ScrabbleScoreTests */,
 			);
 		};
 /* End PBXProject section */
@@ -180,7 +229,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A3DE6BD322C5D8100050AD9B /* Resources */ = {
+		A3DE6BF122C5D8B40050AD9B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -194,24 +243,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3DE6BEB22C5D8600050AD9B /* Character + Extension.swift in Sources */,
+				A3DE6BEE22C5D8900050AD9B /* Scrabble.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A3DE6BD122C5D8100050AD9B /* Sources */ = {
+		A3DE6BEF22C5D8B40050AD9B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A3DE6BDB22C5D8100050AD9B /* ScrabbleTests.swift in Sources */,
+				A3DE6BF622C5D8B40050AD9B /* ScrabbleScoreTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		A3DE6BD822C5D8100050AD9B /* PBXTargetDependency */ = {
+		A3DE6BFA22C5D8B40050AD9B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = A3DE6BCB22C5D8100050AD9B /* Scrabble */;
-			targetProxy = A3DE6BD722C5D8100050AD9B /* PBXContainerItemProxy */;
+			targetProxy = A3DE6BF922C5D8B40050AD9B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -341,6 +392,7 @@
 		A3DE6BE122C5D8100050AD9B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -348,7 +400,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Scrabble/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Scrabble/Application/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -358,6 +410,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.josefernando.Scrabble;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -366,6 +419,7 @@
 		A3DE6BE222C5D8100050AD9B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -373,7 +427,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Scrabble/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Scrabble/Application/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -388,36 +442,36 @@
 			};
 			name = Release;
 		};
-		A3DE6BE422C5D8100050AD9B /* Debug */ = {
+		A3DE6BFC22C5D8B40050AD9B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5728N6BZS9;
-				INFOPLIST_FILE = ScrabbleTests/Info.plist;
+				INFOPLIST_FILE = ScrabbleScoreTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.josefernando.ScrabbleTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.josefernando.ScrabbleScoreTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		A3DE6BE522C5D8100050AD9B /* Release */ = {
+		A3DE6BFD22C5D8B40050AD9B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5728N6BZS9;
-				INFOPLIST_FILE = ScrabbleTests/Info.plist;
+				INFOPLIST_FILE = ScrabbleScoreTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.josefernando.ScrabbleTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.josefernando.ScrabbleScoreTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -445,11 +499,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A3DE6BE322C5D8100050AD9B /* Build configuration list for PBXNativeTarget "ScrabbleTests" */ = {
+		A3DE6BFB22C5D8B40050AD9B /* Build configuration list for PBXNativeTarget "ScrabbleScoreTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A3DE6BE422C5D8100050AD9B /* Debug */,
-				A3DE6BE522C5D8100050AD9B /* Release */,
+				A3DE6BFC22C5D8B40050AD9B /* Debug */,
+				A3DE6BFD22C5D8B40050AD9B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
